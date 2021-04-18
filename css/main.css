@@ -60,15 +60,22 @@ header .profile-link a{
     margin-right: 50px;
 
 }
-.home-main img{
+.home-main{
     width: 100vw;
-    height: auto;
+    height: 100%;
+    background-image: url('../asset/img/Cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .home-main .main-title-container{
+    height: 55%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 180px 40px;
+    grid-template-rows: 200px 40px;
     place-items: center;
+    align-content: center;
+    /* margin-top: 40px; */
     
 }
 
@@ -77,9 +84,15 @@ header .profile-link a{
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 5px;
+    color: white;
 }
-.home-main .main-title-container a{
+.home-main .main-title-container button{
     grid-column: 2/6;
     grid-row: 2/3;
-    
+    align-self: start;
+    padding: 10px;
+    background-color: #47cfac;
+    font-size: 1rem;
+
+
 }
