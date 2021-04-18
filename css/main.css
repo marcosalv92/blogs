@@ -65,32 +65,21 @@ header .profile-link a{
     height: auto;
 }
 .home-main .main-title-container{
-    position: absolute;
-    left: 50%;
-    top: 25%;
-    transform: translate(-50%, -50%);
-}
-.home-main .main-title-container p{
-    font-size: 1.2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 700;
-    letter-spacing: 4px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 180px 40px;
+    place-items: center;
     
-    color: white;
+}
 
+.home-main .main-title-container p{
+    grid-column: 2/6;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 5px;
 }
 .home-main .main-title-container a{
-    display: block;
-    font-size: 1rem;
-    font-weight: bold;
-    width:70px;
-    height: 20px;
-    padding: 8px;
-    /* margin: 0 auto; */
-    background-color: #47cfac;
-    text-align: center;
-    border-radius: 5px;
-    margin: 60px auto;
-    
+    grid-column: 2/6;
+    grid-row: 2/3;
     
 }
